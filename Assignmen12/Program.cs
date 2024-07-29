@@ -77,6 +77,24 @@ namespace Assignmen12
             //    Console.WriteLine("Error: " + e.Message);
             //} 
             #endregion
+
+            #region Question 4 part 2
+            string testString = "aaaaaaaaaxa";
+            Console.WriteLine($"Test String: {testString}");
+            int index = CharacterHandler.NonRepeatingFirstCharIndex(testString);
+
+            if (index != -1)
+            {
+                Console.WriteLine($"First non-repeated character is {testString[index]}");
+                Console.WriteLine($"Index:{index}");
+            }
+            else
+            {
+                Console.WriteLine("No non-repeated character found.");
+            }
+
+
+            #endregion
         }
     }
 }
